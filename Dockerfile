@@ -6,8 +6,8 @@ COPY . /app
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-EXPOSE 8080
+EXPOSE 8501
 
 ENV NAME World
 
-CMD ["python", "app.py"]
+CMD ["streamlit", "run" "app.py"]
